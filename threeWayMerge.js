@@ -1,6 +1,6 @@
 var maxNumber = process.argv[2];
 function getRandomArbitrary(min, max) {
-  return Math.round(Math.random() * (max - min) + min);
+	return Math.round(Math.random() * (max - min) + min);
 }
 
 
@@ -41,7 +41,7 @@ Array.prototype.mergeSort = function(arr2, arr3) {
 
 // Combine first, then sort
 Array.prototype.combineSort = function(arr2, arr3) {
-	return this.concat(arr2, arr3).sort(function(a, b) {
+	return this.join(arr2, arr3).sort(function(a, b) {
 		return a - b;
 	});
 }
